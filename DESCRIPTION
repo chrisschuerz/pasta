@@ -1,14 +1,14 @@
-﻿Package: pasta
-Type: Package
+Package: pasta
+Version: 0.1.0
 Title: Simplyfied pasting of strings
 Description: Intuitive and readable infix functions to paste strings together.
-Version: 0.1.0
-Authors@R: c(person("Christoph", "Schürz", email = "christoph.schuerz@boku.ac.at", 
-               role = c("aut", "cre")),
-        person("Daniel", "Klotz", email = "daniel.klotz@boku.ac.at", 
-               role = c("aut", "cre")))
+Authors@R: c( person("Christoph", "Schürz", role = c("aut", "cre"),
+                      email = "christoph.schuerz@boku.ac.at"),
+               person("Daniel", "Klotz", role = c("aut"),
+                      email = "daniel.klotz@boku.ac.at"))
 Maintainer: Christoph Schürz <christoph.schuerz@boku.ac.at>
 VignetteBuilder: knitr
 License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 5.0.1

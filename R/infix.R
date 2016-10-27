@@ -1,62 +1,50 @@
-#' Paste function
+#' Paste underscore Function
 #'
 #' Pastes two strings by "_".
-#' @name \%_\%
 #' @param a a character string
 #' @param y a character string
 #' @export
-#' @rdname _
 #' @examples
 #' 'spaghetti' %_% 'sauce'
 #' 'noodle' %_% 'soup'
 "%_%" <- function(a, b) paste(a, b, sep = "_")
 
-#' Paste function
+#' Paste hypen function
 #'
 #' Pastes two strings by "-".
-#' @name \%/\%
 #' @param a a character string
 #' @param y a character string
 #' @export
-#' @rdname /
 '%-%' <- function(a, b) paste(a, b, sep = "-")
 
-#' Paste function
+#' Paste dot function
 #'
 #' Pastes two strings by ".".
-#' @name \%.\%
 #' @param a a character string
 #' @param y a character string
 #' @export
-#' @rdname .
 '%.%' <- function(a, b) paste(a, b, sep = ".")
 
-#' Paste function
+#' Paste slash function
 #'
 #' Pastes two strings by "/".
-#' @name \%/\%
 #' @param a a character string
 #' @param y a character string
 #' @export
-#' @rdname /
 '%//%' <- function(a, b) paste(a, b, sep = "/")
 
-#' Paste function
+#' Paste 0 function
 #'
 #' Pastes two strings by "".
-#' @name \%/\%
 #' @param a a character string
 #' @param y a character string
 #' @export
-#' @rdname /
 '%&%' <- function(a, b) paste0(a, b)
 
-#' Paste function
+#' Paste space function
 #'
 #' Pastes two strings by " ".
-#' @name \%/\%
 #' @param a a character string
 #' @param y a character string
 #' @export
-#' @rdname /
-'%&&%' <- function(a, b) paste0(a, b)
+'%&&%' <- function(a, b) paste(a, b, sep = " ")

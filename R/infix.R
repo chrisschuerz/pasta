@@ -6,6 +6,9 @@
 #' @param y a character string
 #' @export
 #' @rdname _
+#' @examples
+#' 'spaghetti' %_% 'sauce'
+#' 'noodle' %_% 'soup'
 "%_%" <- function(a, b) paste(a, b, sep = "_")
 
 #' Paste function

@@ -1,18 +1,36 @@
-#' Paste underscore Function
+#' Make pasta with strings
+#'
+#' Pasta provides a set of easy to read infix function for the intuitive
+#' pasting of characters.\cr
+#' Currently the following functions are available for concatenation:
+#'
+#' @param a,b characters.
+#' @name pasta
+#' @examples
+#' 'spaghetti' %_% 'sauce' # 'spaghetti_sauce'
+#' 'ravioli' %-% 'recipe' # 'ravioli-recipe'
+#' 'spaghetti' %.% 'code' # 'spaghetti.code'
+#' 'fussili' %//% 'farfalle' # 'fussili/farfalle'
+#' 'pasta' %&% 'sciutta' # 'pastasciutta'
+#' 'noodle' %&&% 'soup' # 'noodle soup'
+#' 'carbonara' %|% 'ragù' # 'carbonara|ragù'
+NULL
+
+#' Concatenate with an underscore
 #'
 #' \%_\% pastes two strings by "_".
 #' @rdname pasta
 #' @export
 "%_%" <- function(a, b) paste(a, b, sep = "_")
 
-#' Paste hypen function
+#' Concatenate with a hyphen
 #'
 #' \%-\% pastes two strings by "-".
 #' @rdname pasta
 #' @export
 '%-%' <- function(a, b) paste(a, b, sep = "-")
 
-#' Paste dot functions
+#' Concatenate with a dot
 #'
 #' \%.\% pastes two strings by ".".
 #' @rdname pasta
@@ -26,37 +44,25 @@
 #' @export
 '%//%' <- function(a, b) paste(a, b, sep = "/")
 
-#' Paste 0 function
+#' Concatenate wihtouth seperator
 #'
 #' \%&\% pastes two strings by "".
 #' @rdname pasta
 #' @export
 '%&%' <- function(a, b) paste0(a, b)
 
-#' Paste space function
+#' Concatenate with space
 #'
 #' \%&&\% pastes two strings by " ".
 #' @rdname pasta
 #' @export
 '%&&%' <- function(a, b) paste(a, b, sep = " ")
 
-#' Paste or function
+#' Concatenate with or
 #'
 #' \%|\% pastes two strings with a "|".
 #' @rdname pasta
 #' @export
 '%|%' <- function(a, b) paste(a, b, sep = "|")
 
-#' Make pasta with strings
-#'
-#' @param a,b characters.
-#' @name pasta
-#' @examples
-#' 'spaghetti' %_% 'sauce' # 'spaghetti_sauce'
-#' 'ravioli' %-% 'recipe' # 'ravioli-recipe'
-#' 'spaghetti' %.% 'code' # 'spaghetti.code'
-#' 'fussili' %//% 'farfalle' # 'fussili/farfalle'
-#' 'pasta' %&% 'sciutta' # 'pastasciutta'
-#' 'noodle' %&&% 'soup' # 'noodle soup'
-#' 'carbonara' %|% 'ragù' # 'carbonara|ragù'
-NULL
+

@@ -17,7 +17,7 @@
 #' @export
 '%-%' <- function(a, b) paste(a, b, sep = "-")
 
-#' Paste dot function
+#' Paste dot functions
 #'
 #' Pastes two strings by ".".
 #' @param a a character string
@@ -48,3 +48,11 @@
 #' @param y a character string
 #' @export
 '%&&%' <- function(a, b) paste(a, b, sep = " ")
+
+#' Paste or function
+#'
+#' Pastes two strings with "|".
+#' @param a a character string
+#' @param y a character string
+#' @export
+'%|%' <- function(a, b) paste(a, b, sep = "|")

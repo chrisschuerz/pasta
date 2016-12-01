@@ -1,6 +1,6 @@
 Package: pasta
 Version: 0.1.0
-Title: Simplyfied pasting of strings
+Title: noodlyfied pasting of strings
 Description: Intuitive and readable infix functions to paste strings together.
 Authors@R: c( person("Christoph", "Schürz", role = c("aut", "cre"),
                       email = "christoph.schuerz@boku.ac.at"),

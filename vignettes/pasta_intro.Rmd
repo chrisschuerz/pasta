@@ -1,0 +1,57 @@
+---
+title: "Pasta: Noodlyfied Pasting of Strings"
+author: "Christoph Schürz, Daniel Klotz"
+date: "`r Sys.Date()`"
+output:
+  knitr:::html_vignette:
+    number_sections: yes
+vignette: >
+  %\VignetteIndexEntry{Pasta: Noodlyfied Pasting of Strings}
+  %\VignetteEngine{knitr::rmarkdown_notangle}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction 
+Base R provides a functionality to concatenate strings through the `paste` 
+functions. Using paste is nice and dandy, but the code can get quite difficult
+to read. Especially if two paste functions need to be nested.
+
+**Pasta** provides a set of infix functions to make concatenation noodlier. 
+This can make the code more in intuitive and readable. Here are
+some tasty examples of the provided functionality:
+```{r}
+  require(pasta, quietly = TRUE)
+  #
+  examples <- c(
+  'macaroni' %_% 'sauce',
+  'ravioli' %-% 'recipe',
+  'spaghetti' %.% 'code',
+  'fussili' %//% 'farfalle',
+  'pasta' %&% 'sciutta',
+  'noodle' %&&% 'soup',
+  'carbonara' %|% 'ragù',
+  'spaghetti' %&&% 'al' %-% 'dente'
+  )
+  print(examples)
+```
+
+
+# Dishes
+Some less-naive exmaples: 
+
+Assume you have a folder with screen-captures of the last spaghetti western you 
+watched and u want to make an animation out of some carefully chosen pictures. 
+
+```{r, eval = FALSE}
+  setwd("your wd")
+  cap_url <- "http://www.caps.media/195/9-rio-bravo/full/rio-bravo-movie-screencaps.com"
+  jpg_urls <- c(cap_url %-% c(4,5,264:268) %.% "jpg")
+  for (i in 1:length(jpg_urls)) {
+      download.file(jpg_urls[i], c("test" %_% i %.% "jpg"), mode = "wb")
+    
+  }
+
+
+
+```
+

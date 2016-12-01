@@ -7,13 +7,14 @@
 #' @param a,b characters.
 #' @name pasta
 #' @examples
-#' 'spaghetti' %_% 'sauce' # 'spaghetti_sauce'
+#' 'macaroni' %_% 'sauce' # 'macaroni_sauce'
 #' 'ravioli' %-% 'recipe' # 'ravioli-recipe'
 #' 'spaghetti' %.% 'code' # 'spaghetti.code'
 #' 'fussili' %//% 'farfalle' # 'fussili/farfalle'
 #' 'pasta' %&% 'sciutta' # 'pastasciutta'
 #' 'noodle' %&&% 'soup' # 'noodle soup'
 #' 'carbonara' %|% 'ragù' # 'carbonara|ragù'
+#' 'spaghetti' %&&% 'al' %-% 'dente' # 'spaghetti al-dente'
 NULL
 
 #' Concatenate with an underscore

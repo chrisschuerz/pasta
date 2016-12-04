@@ -11,12 +11,12 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-# Introduction 
-Base R provides a functionality to concatenate strings through the `paste` 
+# Introduciton (Antipasto)
+Base R provides a functionality to concatenate strings through the `paste`
 functions. Using paste is nice and dandy, but the code can get quite difficult
 to read. Especially if two paste functions need to be nested.
 
-**Pasta** provides a set of infix functions to make concatenation noodlier. 
+**Pasta** provides a set of infix functions to make concatenation noodlier.
 This can make the code more in intuitive and readable. Here are
 some tasty examples of the provided functionality:
 ```{r}
@@ -36,22 +36,17 @@ some tasty examples of the provided functionality:
 ```
 
 
-# Dishes
-Some less-naive exmaples: 
+# Examples (primo piatto)
+In the following a less naive application-examples are shown:
 
-Assume you have a folder with screen-captures of the last spaghetti western you 
-watched and u want to make an animation out of some carefully chosen pictures. 
+Let us assume that we want to create a fancy animation with some screen-caps of our favorite spaghetti-western. In the following is some `pasta` code that shows how we can download a set of chosen pictures from one of the many nice cites that provide the captures
 
 ```{r, eval = FALSE}
-  setwd("your wd")
   cap_url <- "http://www.caps.media/195/9-rio-bravo/full/rio-bravo-movie-screencaps.com"
   jpg_urls <- c(cap_url %-% c(4,5,264:268) %.% "jpg")
   for (i in 1:length(jpg_urls)) {
       download.file(jpg_urls[i], c("test" %_% i %.% "jpg"), mode = "wb")
-    
   }
-
-
-
 ```
 
+![rio bravo](rio_bravo.gif)

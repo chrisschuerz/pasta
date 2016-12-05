@@ -27,14 +27,14 @@ Here are some tasty examples of the provided functionality:
   require(pasta, quietly = TRUE)
   #
   examples <- c(
-    'macaroni' %_% 'sauce',
-    'ravioli' %-% 'recipe',
-    'spaghetti' %.% 'code',
-    'fussili' %//% 'farfalle',
-    'pasta' %&% 'sciutta',
-    'noodle' %&&% 'soup',
-    'carbonara' %|% 'ragù',
-    'spaghetti' %&&% 'al' %-% 'dente'
+  'macaroni' %_% 'sauce',
+  'ravioli' %-% 'recipe',
+  'spaghetti' %.% 'code',
+  'fussili' %//% 'farfalle',
+  'pasta' %&% 'sciutta',
+  'noodle' %&&% 'soup',
+  'carbonara' %|% 'ragù',
+  'spaghetti' %&&% 'al' %-% 'dente'
   )
   print(examples)
 ```
@@ -53,6 +53,3 @@ chosen pictures from one of the many nice cites that provide the captures
 ```
 
 ![rio bravo](rio_bravo.gif)
-
-Obviously the main course does not involve any pasta. It is thus left open for
-other to create. 

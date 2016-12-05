@@ -10,6 +10,8 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown_notangle}
   %\VignetteEncoding{UTF-8}
 ---
+![](pasta_logo.jpg)
+
 
 # Introduciton (Antipasto)
 Base R provides a functionality to concatenate strings through the `paste`
@@ -17,29 +19,30 @@ functions. Using paste is nice and dandy, but the code can get quite difficult
 to read. Especially if two paste functions need to be nested.
 
 **Pasta** provides a set of infix functions to make concatenation noodlier.
-This can make the code more in intuitive and readable. Here are
-some tasty examples of the provided functionality:
+This can make the code more in intuitive and readable.
+
+# Examples (Primo Piatto)
+Here are some tasty examples of the provided functionality:
 ```{r}
   require(pasta, quietly = TRUE)
   #
   examples <- c(
-  'macaroni' %_% 'sauce',
-  'ravioli' %-% 'recipe',
-  'spaghetti' %.% 'code',
-  'fussili' %//% 'farfalle',
-  'pasta' %&% 'sciutta',
-  'noodle' %&&% 'soup',
-  'carbonara' %|% 'ragù',
-  'spaghetti' %&&% 'al' %-% 'dente'
+    'macaroni' %_% 'sauce',
+    'ravioli' %-% 'recipe',
+    'spaghetti' %.% 'code',
+    'fussili' %//% 'farfalle',
+    'pasta' %&% 'sciutta',
+    'noodle' %&&% 'soup',
+    'carbonara' %|% 'ragù',
+    'spaghetti' %&&% 'al' %-% 'dente'
   )
   print(examples)
 ```
 
-
-# Examples (primo piatto)
-In the following a less naive application-examples are shown:
-
-Let us assume that we want to create a fancy animation with some screen-caps of our favorite spaghetti-western. In the following is some `pasta` code that shows how we can download a set of chosen pictures from one of the many nice cites that provide the captures
+As a less naive example let us assume that we want to create a fancy animation
+with some screen-caps of our favorite spaghetti-western.
+In the following is some `pasta` code that shows how we can download a set of
+chosen pictures from one of the many nice cites that provide the captures
 
 ```{r, eval = FALSE}
   cap_url <- "http://www.caps.media/195/9-rio-bravo/full/rio-bravo-movie-screencaps.com"
@@ -50,3 +53,6 @@ Let us assume that we want to create a fancy animation with some screen-caps of 
 ```
 
 ![rio bravo](rio_bravo.gif)
+
+Obviously the main course does not involve any pasta. It is thus left open for
+other to create. 

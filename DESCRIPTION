@@ -1,14 +1,14 @@
 Package: pasta
 Version: 0.1.0
-Title: noodlyfied pasting of strings
+Title: Noodlyfied Pasting of Strings
 Description: Intuitive and readable infix functions to paste strings together.
 Authors@R: c( person("Christoph", "Schürz", role = c("aut", "cre"),
-                      email = "christoph.schuerz@boku.ac.at"),
-               person("Daniel", "Klotz", role = c("aut"),
-                      email = "daniel.klotz@boku.ac.at"))
-Maintainer: Christoph Schürz <christoph.schuerz@boku.ac.at>
+                      email = "c.schuerz@gmail.com"),
+              person("Daniel", "Klotz", role = c("aut")))
+Maintainer: Christoph Schürz <c.schuerz@gmail.com>
+BugReports: https://github.com/chrisschuerz/pasta/issues
 VignetteBuilder: knitr
-License: MIT
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1

@@ -10,7 +10,7 @@
 #' 'macaroni' %_% 'sauce' # 'macaroni_sauce'
 #' 'ravioli' %-% 'recipe' # 'ravioli-recipe'
 #' 'spaghetti' %.% 'code' # 'spaghetti.code'
-#' 'fussili' %//% 'farfalle' # 'fussili/farfalle'
+#' 'fusilli' %//% 'farfalle' # 'fusilli/farfalle'
 #' 'pasta' %&% 'sciutta' # 'pastasciutta'
 #' 'noodle' %&&% 'soup' # 'noodle soup'
 #' 'carbonara' %|% 'ragù' # 'carbonara|ragù'
@@ -45,7 +45,7 @@ NULL
 #' @export
 '%//%' <- function(a, b) paste(a, b, sep = "/")
 
-#' Concatenate wihtouth seperator
+#' Concatenate without separator
 #'
 #' \%&\% pastes two strings by "".
 #' @rdname pasta

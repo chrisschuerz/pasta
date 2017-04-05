@@ -7,6 +7,8 @@ Authors@R: c( person("Christoph", "Schürz", role = c("aut", "cre"),
               person("Daniel", "Klotz", role = c("aut")))
 Maintainer: Christoph Schürz <c.schuerz@gmail.com>
 BugReports: https://github.com/chrisschuerz/pasta/issues
+URL: 	https://chrisschuerz.github.io/portfolio/pasta/
+Suggests: knitr
 VignetteBuilder: knitr
 License: GPL-3
 Encoding: UTF-8
